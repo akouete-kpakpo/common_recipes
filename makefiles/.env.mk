@@ -6,7 +6,7 @@ MAKE_TAG := --no-print-directory
 SHELL := /bin/bash
 PYTHON := python3
 PIP := ${PYTHON} -m pip
-CI_FILE := .github/workflows/testing_recipes-ci.yml
+CI_FILE := .github/workflows/ci-rules.yml
 _VERBOSE ?= -vvv
 _COLOR ?= --color=yes
 PYTEST := RUN_BY_PYTEST=True ${PYTHON} -m pytest ${_VERBOSE} ${_COLOR}
