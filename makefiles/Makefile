@@ -57,7 +57,7 @@ update-submodule:  ## Update submodule to the last version
 
 remove-root-files:  ## remove configurations & requirements files from submodule
 	@$(MAKE) ${MAKE_TAG} echo-purple msg="+++remove-root-files:"
-	find ${SUBMODULE_ROOT_FILES_PATH} -type f | sed -e 's/submodule\/root_files\///g' | xargs rm 2> /dev/null || true
+	find ${SUBMODULE_ROOT_FILES_PATH} -type f | sed -e 's/testing_recipes\/root_files\///g' | xargs rm 2> /dev/null || true
 .PHONY: remove-root-files
 
 
