@@ -66,5 +66,4 @@ setup(
     package_dir={"": SRC_DIR},
     include_package_data=True,
     install_requires=install_requires,
-    include_package_data=True,
 )
