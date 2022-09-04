@@ -51,7 +51,7 @@ def filter_libraries(
 
 
 long_description = get_long_description()
-description = extract_description(long_description, "Description")
+description = extract_description(long_description, "Purpose")
 install_requires = get_install_requires()
 
 setup(
@@ -59,6 +59,12 @@ setup(
     version="0.0.1",
     author="(c) Akouete Kpakpo",
     author_email="adkevinkpakpo@gmail.com",
+    license="MIT",
+    url="",
+    classifiers=[
+        "Programming Language :: Python :: 3.8",
+        "Operating System :: POSIX :: Linux",
+    ],
     description=description,
     long_description=long_description,
     long_description_content_type="text/markdown",
